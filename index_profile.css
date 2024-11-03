@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #00BFFF;
+  --snd-bg-color: #007FFF;
+  --text-color: #ffffff;
+  --main-color: #00004D;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+span {
+    color: var(--main-color);
+  }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+  }
+
+  .portfolio-logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .profile-logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 700;
+  }
+
+  .navbar-container a {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+  }
+  
+  .navbar-container a.active {
+    color: var(--text-color);
+  }
+
+  .profile h2 {
+    margin-bottom: 5rem;
+  }
+  
+  .profiles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 10ps;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .profiles-container .profile-card {
+    flex: 1 1 30rem;
+    flex-direction: column;
+    background-color: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .profiles-container .profile-card:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+  }
+  
+  .profile-card i {
+    font-size: 7rem;
+    color: var(--main-color);
+  }
+  
+  .profile-card h3 {
+    font-size: 2.6rem;
+  }
+  
+  .profile-card p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+  }
+
+  .profiles-container .profile-card img {
+    height: 90px;
+    width: 90px;
+  }
+  
+/* Tooltip text */
+.tooltip-icon .tooltiptext-icon {
+    visibility: hidden;
+    width: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+    font-family: "Nunito";
+    font-weight: 300;
+    border-radius: 4px;
+    position: absolute;
+    margin-bottom: 10px;
+    z-index: 1;
+    bottom: 100%;
+    left: -100%;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Show the tooltip text on hover */
+  .tooltip-icon:hover .tooltiptext-icon {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #00FFFF;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--main-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  
+  .button:hover {
+    box-shadow: var(--text-color);
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    color: var(--text-color);
+  }
